@@ -1,27 +1,16 @@
+# fibonacci series
 
-num = int(input("Enter a number: "))
+num=int(input("enetr a number for fibonacci series"))
 
-
-if num <= 1:
-    is_prime = False
-else:
-    is_prime = True
-    for i in range(2, int(num ** 0.5) + 1):
-        if num % i == 0:
-            is_prime = False
-            break
-
-
-num_str = str(num)
-num_digits = len(num_str)
-sum_of_powers = 0
-for digit in num_str:
-    sum_of_powers += int(digit) ** num_digits
-is_armstrong = (sum_of_powers == num)
-
-is_palindrome = (str(num) == str(num)[::-1])
+def rec(n):
+    if n==0:
+        return 0
+    elif(n==1):
+        return 1
+    else:
+        return rec(n-1)+rec(n-2)
+    
+print(f" value of fib{num} is {rec(num)}")
 
 
-print(f"{num} is prime: {is_prime}")
-print(f"{num} is Armstrong: {is_armstrong}")
-print(f"{num} is palindrome: {is_palindrome}")
+

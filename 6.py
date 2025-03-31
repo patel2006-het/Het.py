@@ -1,10 +1,12 @@
+#    p1 from list
+l1=[1,3,5,7,11]
+l2=[2,44,36,88]
 
-for hour in range(24):
-    if hour == 0:
-        print("12:00 Midnight")
-    elif hour == 12:
-        print("12:00 Noon")
-    elif hour < 12:
-        print(f"{hour}:00 AM")
-    else:
-        print(f"{hour - 12}:00 PM")
+
+l1.pop(2)            # removal of 5 bcz its index is at 2
+l1.append(2)
+l1.append(44)
+l1.append(36)
+l1.append(88)
+
+print(l1)

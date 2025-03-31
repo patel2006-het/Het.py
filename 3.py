@@ -1,11 +1,23 @@
-# str = input("enter a string :")
-# print(len(str))
+#   check armstrong number 
+n=int(input("enter a number"))
+copy=n
+sum=0
+order=len(str(n))
 
-str1=input("enter a first string")
-str2=input("enter a sec string")
+while(n>0):
+    digit=n%10
+    sum+=digit**order      # in python why we use '//'
+    n=n//10               #  for example 88/10=8.8 and 88//10=8
+    
+if(sum==copy):
+     print("yes,armstrong number")
+else:
+    print("not armstrong number")
 
-def remove(str1,str2):
-    str3 = str1.replace(str2, " ")
-    print("reslting string after removal",str3)
 
-remove(str1,str2)  
+    
+ 
+
+
+
+

@@ -1,16 +1,19 @@
+     #  p2 from list
+l=[]
 
-n = int(input("Enter value of n: "))
-r = int(input("Enter value of r: "))
+while len(l)<4:
 
-def factorial(num):
-    fact = 1
-    for i in range(1, num + 1):
-        fact *= i
-    return fact
+   n=int(input("enter a number")) 
+   l.append(n)
+    
 
-nCr = factorial(n) // (factorial(r) * factorial(n - r))
+print(l)
 
-nPr = factorial(n) // factorial(n - r)
 
-print(f"{n}C{r} = {nCr}")
-print(f"{n}P{r} = {nPr}")
+m=int(input("enter a number"))
+if m in l:
+   print(f" index of given number {m } is {l.index(m)}")
+
+
+
+

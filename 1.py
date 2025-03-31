@@ -1,14 +1,17 @@
-def upper():
+#  program to calculate the total money in any general store
+sum=0
+while(True):
+    user=input(" enter a number")
+    if(user!='q'):
+        sum=sum+int(user)
+        print("continue tour shopping")
+    else:
+        print("thanks for useing")
+        print(f"your bill is {sum}")
+        break # if break not use then loop continue forever
+        
 
-    str = input("Enter a string:")
 
-    str1 = ""
+           
 
-    for ch in str:
-        if ch >= 'a' and ch <= 'z':
-            str1 = str1 + chr(ord(ch)-32) 
-        else:
-            str1 = str1 + ch
-    return str1
-
-print(upper())
+    
