@@ -1,21 +1,12 @@
-   
-input_string=input("enter a string")
-def countstring(input_string):
-    upper_count=0
-    lower_count=0
-    for char in input_string:
-        if char.isupper():
-            upper_count+=1
-        elif char.islower():
-            lower_count+=1
-    counts={
-        "upper":upper_count,
-        "lower":lower_count
-    } 
-    return counts
+# Write a program that defines a function convert() that receives a string containing
+# a sequence of whitespace separated words and returns a string after removing all duplicate words 
+# and sorting them alphanumerically. Hint: use set(), list () , sorted(), join()
 
+def convert():
+    str=input("enter a string")
+    l_str=set(str)
+    s_str=sorted(l_str)
+    return "".join(s_str)
 
-result=countstring(input_string)
+print(convert())    
 
-print("the uppercase letter is ",result["upper"])
-print("the lowercase letter is ",result["lower"])

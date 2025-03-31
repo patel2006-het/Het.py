@@ -1,14 +1,14 @@
-# Create a list of tuples containing a food item and its price. Sort the tuples in descending order by price
-food_item=[(300,"pizza"),(250,"sizzler"),(40,"vadapau"),(60,"burger"),(400,"salad")]
+# Write a function to create and return a list containing tuples 
+# of the form (x,x2,x3) for all x between 1 and given ending value
 
-newlist=list(food_item)
+def hee():
+    l=[]
+    n=int(input("enter a number"))
+    for i in range(1,n+1):
+        l.append((i,i**2,i**3))
+    print(l)    
 
-newlist.sort()
-newlist.reverse()
-food_item=tuple(newlist)
-print(food_item)
-
-
+hee()
 
 
 

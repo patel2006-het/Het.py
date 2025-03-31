@@ -1,16 +1,9 @@
+# Write a function create_list() that creates and returns a list 
+# which is an intersection of two lists passed to it.
+def create_list(l1,l2):
+    l3=l1+l2
+    return l3
 
-names = [("het",), "riya", ("Aditya",), "priya", ("Manav",), "tina", "rina"]
-
-# Initialize counters
-boys_count = 0
-girls_count = 0
-
-for name in names:
-    if isinstance(name, tuple):  
-        boys_count += 1
-    else: 
-        girls_count += 1
-
-#  result
-print("Number of boys:", boys_count)
-print("Number of girls:", girls_count)
+l1=["apple","banana","mango"]
+l2=["watermelon","custrad apple","pomegranate"]
+print(create_list(l1,l2))

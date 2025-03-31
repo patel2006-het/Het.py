@@ -1,12 +1,12 @@
+# Define three functions fun(), disp() and msg(). Store them in a list and call them one by one in a loop
+def fun():
+    print("this is fun")
+def disp():
+     print("this is disp")
+def msg():
+     print("this is msg")
 
+functiob_list=[fun,disp,msg]
 
-def compute():
-    n=input("enter a number")
-    result=int(n)+int(n*2)+int(n*3)+int(n*4)
-    return result
-    
-
-print(compute())
-
-
-    
+for func in functiob_list:
+     func()
